@@ -15,7 +15,7 @@
 	<tr>
 		<th colspan="2">Departure:</th>
 		<td>
-			<input type="text" value="dd.mm.yyyy" maxlength="10" size="18"/>
+			<input type="text" name="depDate" value="dd.mm.yyyy" maxlength="10" size="18"/>
 		</td>
 		<td colspan="2">
   			<input type="radio" name="depCity" value="Rome" checked> Rome
@@ -25,7 +25,7 @@
 	<tr>
 		<th colspan="2">Return:</th>
 		<td>
-			<input type="text" value="dd.mm.yyyy" maxlength="10" size="18"/>
+			<input type="text" name="retDate" value="dd.mm.yyyy" maxlength="10" size="18"/>
 		</td>
 		<td colspan="2">
   			<input type="radio" name="retCity" value="Rome"> Rome
@@ -34,18 +34,18 @@
 	</tr>
 	<tr>
 		<th colspan="2">Carrier:</th>
-		<td><select>
+		<td><select name="carrier">
 			<option value="alitalia">Alitalia</option>
 			<option value="mistralAir">Mistral Air</option>
 			<option value="meridiana">Meridiana</option>
 		</select></td>
 		<td colspan="2">
-			<input type="checkbox" value="directOnly" checked/> Direct connection only
+			<input type="checkbox" name="directOnly" checked/> Direct connection only
 		</td>
 	</tr>
 	<tr>
 		<th colspan="2">Persons:</th>
-		<td><select>
+		<td><select name="persons">
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -54,7 +54,7 @@
 			<option value="6">6</option>
 		</select></td>
 		<th>Class:</th>
-		<td><select>
+		<td><select name="class">
 			<option value="economy">Economy</option>
 			<option value="business">Business</option>
 			<option value="first">First</option>
@@ -64,13 +64,13 @@
 	<tr>
 		<th rowspan="3">Personal data</th>
 		<td>Name:</td>
-		<td><input type="text" maxlength="30" width="18"/></td>
+		<td><input type="text" maxlength="30" width="18" name="name"/></td>
 		<td>Surname:</td>
-		<td><input type="text" width="18"/></td>
+		<td><input type="text" width="18" name="surname"/></td>
 	</tr>
 	<tr>
 		<td>Email:</td>
-		<td><input type="text" width="56"/></td>
+		<td><input type="text" name="email" width="56"/></td>
 	</tr>
 	<tr>
 		<td colspan="4" align="center"><textarea rows="5" cols="52">Comments:</textarea></td>
