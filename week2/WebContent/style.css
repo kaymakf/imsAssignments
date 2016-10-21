@@ -26,7 +26,7 @@
     font-family: FreeSans, serif;
 }
 h2{
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #90cbdb;
     color: white;
     font-family: FreeSans, serif;
@@ -78,4 +78,5 @@ h2{
     color: white;
     text-align: center;
     font-family: FreeSans, serif;
+    font-weight: bold;
 }
