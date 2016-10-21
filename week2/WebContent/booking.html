@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" >
+	<title>Booking</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+	</div>
+	<div id="menu">
+		<a href="booking.html">Flights</a>
+		<a href="">Packages</a>
+		<a href="">Last Minute</a>
+		<a href="">Hotels</a>
+		<a href="">Contact</a>
+	</div>
+
+	<div id="content">
+		<form action="http://starriest-designato.000webhostapp.com/helloworld.php" method="POST">
+			<table>
+				<tr>
+					<td colspan="5">
+						<img src="banner.jpg" height="150px" width="100%">
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">Departure:</th>
+					<td>
+						<input type="date" name="depDate" maxlength="10" size="18" required>
+					</td>
+					<td colspan="2">
+						<input type="radio" name="depCity" value="Rome" checked> Rome
+						<input type="radio" name="depCity" value="Milan"> Milan
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">Return:</th>
+					<td>
+						<input type="date" name="retDate" maxlength="10" size="18" required>
+					</td>
+					<td colspan="2">
+						<input type="radio" name="retCity" value="Rome"> Rome
+						<input type="radio" name="retCity" value="Milan"> Milan
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">Carrier:</th>
+					<td><select name="carrier">
+						<option value="alitalia">Alitalia</option>
+						<option value="mistralAir">Mistral Air</option>
+						<option value="meridiana">Meridiana</option>
+					</select></td>
+					<td colspan="2">
+						<input type="checkbox" name="directOnly" checked> Direct connection only
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">Persons:</th>
+					<td><select name="persons">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select></td>
+					<th>Class:</th>
+					<td><select name="class">
+						<option value="economy">Economy</option>
+						<option value="business">Business</option>
+						<option value="first">First</option>
+					</select></td>
+				</tr>
+				<tr height="8"></tr>
+				<tr>
+					<th rowspan="3">Personal data</th>
+					<td>Name:</td>
+					<td><input type="text" maxlength="30" size="18" name="name" required></td>
+					<td>Surname:</td>
+					<td><input type="text" size="18" name="surname" required></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td colspan="3"><input type="email" name="email" placeholder="email@hostname.it" size="56" required></td>
+				</tr>
+				<tr>
+					<td colspan="4" align="center"><textarea rows="5" cols="52" name="comments" placeholder="Comments:"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="3"><button type="submit" value="Submit">Submit</button></td>
+					<td colspan="2"><button type="reset" value="Reset">Reset</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div id="news" style="width: 99%">
+		<h2>News</h2>
+		<p>
+			Integer suscipit tristique magna. Aliquam sagittis mi. Aliquam non lectus id orci vehicula luctus. Donec felis.
+			Cras at metus eget ante auctor lacinia. Phasellus eu justo. Ut nec arcu. Donec convallis orci.
+		</p>
+	</div>
+
+	<div id="copyright">
+		<p>
+			<small>&copy; 2016 ... - All rights reserved</small>
+		</p>
+	</div>
+</div>
+</body>
+</html>

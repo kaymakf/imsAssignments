@@ -14,16 +14,21 @@
 
 #menu{
     padding: 4px;
-    max-width: 18%;
+    /*max-width: 163px;*/
+    width: 18%;
     float: left;
 }
 
 #content{
-    max-width: 60%;
+    /*width: 60%;*/
     float: left;
     padding-left: 1%;
     padding-right: 1%;
     font-family: sans-serif;
+}
+
+#content table, th, td{
+    border: 2px solid rgba(144, 203, 219, 0.5);
 }
 
 h2{
@@ -38,9 +43,14 @@ h2{
 
 #news{
     border: 2px solid rgba(144, 203, 219, 0.5);
-    max-width: 18%;
+    /*max-width: 163px;*/
     font-family: sans-serif;
     float: left;
+}
+
+#news p{
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #copyright{
@@ -48,7 +58,6 @@ h2{
 }
 
 #menu a{
-    width: 90%;
     margin: 1px;
     padding: 6px;
     background-color: #90cbdb;
@@ -56,8 +65,34 @@ h2{
     font-family: sans-serif;
     font-variant: small-caps;
     font-weight: bold;
-    position: relative;
-    float: left;
+    /*position: relative;*/
+}
+
+@media screen and (min-width: 880px){
+    #menu a{
+        display: block;
+    }
+    #news{
+        float: left;
+        width: 18%;
+    }
+    #content h2, #content p{
+        width: 540px;
+    }
+}
+
+@media not screen and (min-width: 880px){
+    #menu{
+        width: 100%;
+    }
+    #menu a{
+        width: 15%;
+        float: left;
+    }
+    /*#content{
+        width: 99%;
+    }*/
+
 }
 
 #menu a:link {
