@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+#wrapper{
+    border: 2px solid rgba(144, 203, 219, 0.5);
+    max-width: 910px;
+}
+
+#header{
+    border: 2px solid rgba(144, 203, 219, 0.5);
+    height: 84px;
+    margin: 6px;
+    background: url("clouds.jpg") repeat-x center;
+}
+
+#menu{
+    padding: 4px;
+    max-width: 18%;
+    float: left;
+}
+
+#content{
+    max-width: 60%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: FreeSans, serif;
+}
+h2{
+    margin-top: 0px;
+    background-color: #90cbdb;
+    color: white;
+    font-family: FreeSans, serif;
+    font-variant: small-caps;
+    font-weight:bold;
+}
+
+#news{
+    border: 2px solid rgba(144, 203, 219, 0.5);
+    max-width: 18%;
+    float: left;
+}
+
+#copyright{
+    clear: both;
+}
+
+#menu a{
+    width: 90%;
+    margin: 1px;
+    padding: 6px;
+    background-color: #90cbdb;
+    color: white;
+    font-family: FreeSans, serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    position: relative;
+    float: left;
+}
+
+#menu a:link {
+    text-decoration: none;
+}
+
+#menu a:visited {
+    text-decoration: none;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#menu a:active {
+    text-decoration: underline;
+}
+
+#copyright{
+    background-color: #90cbdb;
+    color: white;
+    text-align: center;
+    font-family: FreeSans, serif;
+}
