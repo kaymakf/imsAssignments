@@ -22,8 +22,7 @@
 #content{
     /*width: 60%;*/
     float: left;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 10px;
     font-family: sans-serif;
 }
 
@@ -69,6 +68,9 @@ h2{
 }
 
 @media screen and (min-width: 880px){
+    #menu{
+        width: 17%;
+    }
     #menu a{
         display: block;
     }
@@ -76,8 +78,11 @@ h2{
         float: left;
         width: 18%;
     }
+    #content{
+        width: 60%;
+    }
     #content h2, #content p{
-        width: 540px;
+        width: 99%;
     }
 }
 

@@ -17,7 +17,7 @@
 		<a href="">Contact</a>
 	</div>
 
-	<div id="content">
+	<div id="content" style="width: auto">
 		<form action="http://starriest-designato.000webhostapp.com/helloworld.php" method="POST">
 			<table>
 				<tr>
@@ -31,8 +31,8 @@
 						<input type="date" name="depDate" maxlength="10" size="18" required>
 					</td>
 					<td colspan="2">
-						<input type="radio" name="depCity" value="Rome" checked> Rome
-						<input type="radio" name="depCity" value="Milan"> Milan
+						<input type="radio" name="depCity" value="Rome" checked required> Rome
+						<input type="radio" name="depCity" value="Milan" required> Milan
 					</td>
 				</tr>
 				<tr>
@@ -41,8 +41,8 @@
 						<input type="date" name="retDate" maxlength="10" size="18" required>
 					</td>
 					<td colspan="2">
-						<input type="radio" name="retCity" value="Rome"> Rome
-						<input type="radio" name="retCity" value="Milan"> Milan
+						<input type="radio" name="retCity" value="Rome" required> Rome
+						<input type="radio" name="retCity" value="Milan" required> Milan
 					</td>
 				</tr>
 				<tr>
@@ -83,7 +83,7 @@
 				</tr>
 				<tr>
 					<td>Email:</td>
-					<td colspan="3"><input type="email" name="email" placeholder="email@hostname.it" size="56" required></td>
+					<td colspan="3"><input type="email" name="email" placeholder="email@hostname.it" size="56px" required></td>
 				</tr>
 				<tr>
 					<td colspan="4" align="center"><textarea rows="5" cols="52" name="comments" placeholder="Comments:"></textarea></td>
@@ -96,7 +96,7 @@
 		</form>
 	</div>
 
-	<div id="news" style="width: 99%">
+	<div id="news">
 		<h2>News</h2>
 		<p>
 			Integer suscipit tristique magna. Aliquam sagittis mi. Aliquam non lectus id orci vehicula luctus. Donec felis.
