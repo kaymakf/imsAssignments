@@ -17,7 +17,7 @@
 }
 
 #content{
-    float: left;
+    /*float: left;*/
     padding-right: 10px;
     font-family: sans-serif;
 }
@@ -65,10 +65,8 @@ h2{
     #menu a{
         display: block;
     }
-    #news{
-        float: left;
-    }
     #content{
+        float: left;
         width: 60%;
     }
     #content h2, #content p{
