@@ -1,0 +1,139 @@
+@mixin setBorder($radius, $type, $rgba1, $rgba2, $rgba3, $rgba4){
+    border: $radius $type rgba($rgba1, $rgba2, $rgba3, $rgba4);
+}
+
+#wrapper{
+    @include setBorder(2px,solid,144,203,219,0.5);
+    max-width: 910px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#header{
+    @include setBorder(2px,solid,144,203,219,0.5);
+    height: 84px;
+    margin: 6px;
+    background: url("clouds.jpg") repeat-x center;
+}
+
+#menu{
+    padding-left: 4px;
+    padding-right: 4px;
+    float: left;
+}
+
+#content{
+    /*float: left;*/
+    padding-right: 10px;
+    font-family: sans-serif;
+    table, th, td{
+    @include setBorder(2px,solid,144,203,219,0.5);
+  }
+}
+
+h2{
+    padding: 4px 6px;
+    margin: 0;
+    background-color: #90cbdb;
+    color: white;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight:bold;
+}
+
+#news{
+    @include setBorder(2px,solid,144,203,219,0.5);
+    font-family: sans-serif;
+    float: right;
+    p{
+    padding-left: 4px;
+    padding-right: 2px;
+  }
+}
+
+
+#copyright{
+    clear: both;
+}
+
+#menu a{
+    margin: 1px;
+    padding: 6px;
+    background-color: #90cbdb;
+    color: white;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 880px){
+    #menu a{
+        display: block;
+    }
+    #content{
+        float: left;
+        width: 60%;
+    }
+    #content h2, #content p{
+        width: 99%;
+    }
+    .homeSide{
+        width: 18%;
+    }
+    .bookingSide{
+        width: 12%;
+    }
+}
+
+@media not screen and (min-width: 880px){
+    #menu{
+        width: 100%;
+    }
+    #menu a{
+        width: 15%;
+        float: left;
+    }
+}
+
+#menu a:link {
+    text-decoration: none;
+}
+
+#menu a:visited {
+    text-decoration: none;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#menu a:active {
+    text-decoration: underline;
+}
+
+#copyright{
+    background-color: #90cbdb;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 6px;
+}
+
+@keyframes slide {
+    0%{left: 760px;}
+    45%{transform: rotateY(0deg);}
+    50%{left: 0px; transform: rotateY(180deg);}
+    95%{transform: rotateY(180deg);}
+    100%{left: 760px; transform: rotateY(0deg);}
+}
+
+#bg2{
+    background-image: url("airplane.png");
+    width: 150px;
+    height: 128px;
+    position: absolute;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

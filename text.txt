@@ -1,0 +1,3 @@
+Explain the utility, functionality and the usage of CSS‐preprocessors.
+  Css preprocessor makes delevopers able to write reduced code, increases flexibility also prevents reuse of code.
+  In addition, it implements concepts like inheritence to plain css.
