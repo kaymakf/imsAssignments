@@ -15,3 +15,7 @@
 #header{
   padding-bottom: 10px;
 }
+#datetimepicker {
+  language: 'en';
+  pick12HourFormat: true;
+}
