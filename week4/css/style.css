@@ -1,6 +1,17 @@
 @media (min-width: @screen-md-min) {
 }
-.banner {
+#banner {
   height: 100%;
   width: 100%:
+  background-size:100%;
+}
+
+#buttons{
+  padding-top: 10px;
+}
+#resetButton {
+  padding-right: :15px;
+}
+#header{
+  padding-bottom: 10px;
 }
