@@ -5,24 +5,52 @@
     <title>Assignment 4</title>
     <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="bootstrap/bootstrap-2.3.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="res/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="res/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/jstooltip.js"></script>
+    <script>
+      function validate(){
+        var doc = document.form1;
+        var error = "";
+        if(doc.date.value == ""){
+          error += "Please fill the date input";
+        }
+        if(doc.firstname.value == ""){
+          error += "Please enter your name\n";
+        }
+        if(doc.lastname.value == ""){
+          error += "Please enter your lastname\n";
+        }
+        if(doc.email.value == ""){
+          error += "Please enter your e-mail\n";
+        }
+        if(doc.comment.value == ""){
+          error += "Please fill the comment area\n";
+        }
+        if(error == "")
+          return true;
+        else
+          alert(error);
+          return false;
+      }
+    </script>
 </head>
 
 <body>
-    <form method="post" action="http://starriest-designato.000webhostapp.com/helloworld.php" onsubmit="return validate(this);">
+    <form method="post" name="form1" action="http://starriest-designato.000webhostapp.com/helloworld.php"
+          onsubmit="return validate(this);">
         <div class="container">
 
             <div class="row">
-              <label class="col-md-12 col-xs-12 col-sm-12 control-label" for="formGroupInputLarge"> <h2>Order ticket</h2></label>
+                <label class="col-md-12 col-xs-12 col-sm-12 control-label" for="formGroupInputLarge"> <h2>Order ticket</h2></label>
             </div>
 
             <div class="row" id="header">
-              <div class="col-md-12 hidden-xs hidden-sm">
-                <img src="banner.jpg" class="img-responsive" id="banner">
-              </div>
-              <div class="col-md-4" id="filler">
-              </div>
+                <div class="col-md-12 hidden-xs hidden-sm">
+                    <img src="banner.jpg" class="img-responsive" id="banner">
+                </div>
+                <div class="col-md-4" id="filler">
+                </div>
             </div>
 
             <div class="row">
@@ -35,15 +63,15 @@
                 </div>
 
                 <div class="col-md-4 col-xs-12 col-sm-12">
-                  <!-- Sıkıntı var-->
+                    <!-- Sıkıntı var-->
 
-                        <label for="usr">Location</label>
-                        <div class="form-group">
+                    <label for="usr">Location</label>
+                    <div class="form-group">
                         <label class="radio-inline">
-                          <input type="radio" name="locationRadio" id="inlineRadio1" value="option1">Merano
+                          <input type="radio" name="locationRadio" id="inlineRadio1" value="merano" checked>Merano
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="locationRadio" id="inlineRadio2" value="option2">Bolzano
+                          <input type="radio" name="locationRadio" id="inlineRadio2" value="bolzano">Bolzano
                         </label>
                     </div>
                     <!-- +++++++++++++++++++++++++++ -->
@@ -83,17 +111,17 @@
 
             <div class="row" id="buttons">
                 <div class="col-md-1 col-xs-1 col-sm-1">
-                  <button type="button" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary">
                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                      Send
                   </button>
                 </div>
                 <div class="col-md-1 col-xs-1 col-sm-1" id="resetButton">
-                  <button type="button" class="btn btn-warning">Reset</button>
+                    <button type="button" class="btn btn-warning">Reset</button>
                 </div>
             </div>
 
-        <div>
+            <div>
     </form>
 </body>
 
