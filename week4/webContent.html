@@ -4,9 +4,9 @@
 <head>
     <title>Assignment 4</title>
     <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="res/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="res/jquery-3.1.1.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="res/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/jstooltip.js"></script>
     <script>
       function validate(){
@@ -57,7 +57,7 @@
                 <div class="col-md-8 col-xs-12 col-sm-12">
                     <div class="form-group">
                         <label for="usr">Date of concert:</label>
-                        <select class="form-control" name="date" id="date">
+                        <select class="form-control mytooltip" title="Enter valid date" name="date" id="date">
                         </select>
                     </div>
                 </div>
@@ -83,14 +83,14 @@
                 <div class="col-md-6 col-xs-12 col-sm-12">
                     <div class="form-group">
                         <label for="firstName">Firstname</label>
-                        <input type="text" class="form-control" name="firstname" id="firstName" placeholder="Firstname">
+                        <input type="text" class="form-control mytooltip" title="Enter valid firstname"name="firstname" id="firstName" placeholder="Firstname">
                     </div>
                 </div>
 
                 <div class="col-md-6 col-xs-12 col-sm-12">
                     <div class="form-group">
                         <label for="lastName">Lastname</label>
-                        <input type="text" class="form-control" name="lastname" id="lastName" placeholder="Lastname">
+                        <input type="text" class="form-control mytooltip" name="lastname" title="Enter valid surname"id="lastName" placeholder="Lastname">
                     </div>
                 </div>
             </div>
@@ -98,14 +98,14 @@
             <div class="row">
                 <div class="col-md-12 col-xs-12 col-sm-12">
                     <label for="E-mail">E-mail</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+                    <input type="email" class="form-control mytooltip" name="email" id="email" title="Enter valid E-mail" placeholder="E-mail">
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12 col-xs-12 col-sm-12">
                     <label for="comment">Comment</label>
-                    <textarea name="comment" class="form-control" rows="3" id="comment"></textarea>
+                    <textarea name="comment" class="form-control mytooltip" rows="3" title="Enter valid comment" id="comment"></textarea>
                 </div>
             </div>
 
