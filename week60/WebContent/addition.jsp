@@ -19,8 +19,8 @@
 				Number 2:<input type="text" id="number2" />
 			</div>
 			<div >
-				<input type="submit" value="Computate Sum" onClick="sum()"/>
-				<input type="submit" value="Delete" onclick="deleteValues()"/>
+				<input type="button" value="Computate Sum" onClick="sum()"/>
+				<input type="button" value="Delete" onclick="deleteValues()"/>
 			</div>
 		</fieldset>
 		<fieldset id="result" style = "display: none">
@@ -29,7 +29,7 @@
 				<p id="resultShow"></a>
 			</div>
 			<div>
-				<input type="submit" value="New computation" onClick="newComputation()"/>
+				<input type="button" value="New computation" onClick="newComputation()"/>
 			</div>
 		</fieldset>
 		

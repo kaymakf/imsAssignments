@@ -61,13 +61,23 @@ onload = function () {
 		 alert("please enter correct values to input 2");
 		 return;
 	 }
+	 
+	 document.getElementById("resultShow").innerHTML = Number(number1.value) + Number(number2.value);
+	 
 	 var comp = document.getElementById("computation");
 	 comp.style.display="none"; 
 	 var res = document.getElementById("result");
 	 res.style.display="inline";
  }
  
- 
+ function newComputation(){
+	 var comp = document.getElementById("computation");
+	 comp.style.display="inline"; 
+	 var res = document.getElementById("result");
+	 res.style.display="none";
+	 
+	 deleteValues();
+ }
  
  
  
